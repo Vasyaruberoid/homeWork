@@ -11,7 +11,9 @@ const Message = ({ message }: MessagePropsType) => {
   return (
     <div id={"hw1-message-" + message.id} className={s.message}>
       <div className={s.imageAndText}>
-        <img id={"hw1-avatar-" + message.id} />
+        <img id={"hw1-avatar-" + message.id} 
+         width='50'
+         height='50'/>
         <div className={s.text}>
           <div id={"hw1-name-" + message.id} className={s.name}></div>
           <pre id={"hw1-text-" + message.id} className={s.messageText}></pre>
