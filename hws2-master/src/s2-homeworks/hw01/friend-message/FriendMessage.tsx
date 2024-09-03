@@ -1,31 +1,27 @@
 import React from "react";
 import s from "./FriendMessage.module.css";
+import { MessagePropsType } from "../HW1";
 
-export type FriendMessage = {
-  message: MessageType;
-};
-
-export type MessageType = {
-  id: number;
-};
-
-const FriendMessage = ({ message }: FriendMessage) => {
+const FriendMessage = ({ message }: { message: MessagePropsType }) => {
   return (
     <div id={"hw1-friend-message-" + message.id} className={s.friendMessage}>
       <div className={s.friendImageAndText}>
-        <img id={"hw1-friend-avatar-" + message.id} />
+        <div className={s.block}>
+          <img id={"hw1-friend-avatar-" + message.id} src={message.user.avatar} alt="avatar" />
+          <div id={"hw1-friend-time-" + message.id} className={s.friendTime}>
+            {message.message.time}
+          </div>
+        </div>
+
         <div className={s.friendText}>
-          <div
-            id={"hw1-friend-name-" + message.id}
-            className={s.friendName}
-          ></div>
-          <pre
-            id={"hw1-friend-text-" + message.id}
-            className={s.friendMessageText}
-          ></pre>
+          <div id={"hw1-friend-name-" + message.id} className={s.friendName}>
+            {message.user.name}
+          </div>
+          <pre id={"hw1-friend-text-" + message.id} className={s.friendMessageText}>
+            {message.message.text}
+          </pre>
         </div>
       </div>
-      <div id={"hw1-friend-time-" + message.id} className={s.friendTime}></div>
     </div>
   );
 };
