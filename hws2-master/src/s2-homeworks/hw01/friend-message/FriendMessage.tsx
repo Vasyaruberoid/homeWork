@@ -14,7 +14,7 @@ const FriendMessage = ({ message }: { message: MessagePropsType }) => {
         </div>
 
         <div className={s.friendText}>
-          <div id={"hw1-friend-name-" + message.id} className={s.friendName}>
+          <div id={"hw1-friend-name - 1" + message.id} className={s.friendName}>
             {message.user.name}
           </div>
           <pre id={"hw1-friend-text-" + message.id} className={s.friendMessageText}>

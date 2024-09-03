@@ -14,7 +14,7 @@ const Message = ({ message }: { message: MessagePropsType }) => {
         </div>
       </div>
       <div className={s.text}>
-        <div id={"hw1-name-" + message.id} className={s.name}>
+        <div id={"hw1-name-1" + message.id} className={s.name}>
           {message.user.name}
         </div>
         <pre id={"hw1-text-" + message.id} className={s.messageText}>
