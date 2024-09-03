@@ -13,9 +13,7 @@ const FriendMessage = ({ message }: FriendMessage) => {
   return (
     <div id={"hw1-friend-message-" + message.id} className={s.friendMessage}>
       <div className={s.friendImageAndText}>
-        <img id={"hw1-friend-avatar-" + message.id}
-          width='50'
-          height='50'/>
+        <img id={"hw1-friend-avatar-" + message.id} />
         <div className={s.friendText}>
           <div
             id={"hw1-friend-name-" + message.id}

@@ -1,33 +1,34 @@
 .friendMessage {
-  width: 100px;
-  height: 100px;
-  background: #f5f7fb;
-  border-radius: 20px;
   display: flex;
+  width: 600px;
+  height: 100px;
+  margin-top: 60px;
+  margin-left: 60px;
 }
 
 .friendImageAndText {
-width: 50px;
+  width: 600px;
 }
 
 .friendImageAndText img {
   background: url("../avatar.png") center no-repeat;
   background-size: cover;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
   float: left;
+  margin-top: 25px;
 }
 
 .friendText {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.5px;
-  text-align: left;
+  border-radius: 20px;
+  height: 100px;
+  background: #f5f7fb;
+  display: flex;
 }
 
 .friendText:after {
+  background: #f8f7fb;
 }
 
 .friendName {
@@ -39,6 +40,11 @@ width: 50px;
 }
 
 .friendMessageText {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
 }
 
 .friendTime {

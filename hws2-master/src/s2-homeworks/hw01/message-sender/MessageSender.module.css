@@ -2,16 +2,16 @@
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin-top: 200px;
+  margin-top: 100px;
   border-bottom: 1px solid #d9d9d9;
+  padding: 40px;
 }
 
 .textarea {
   width: 976px;
-  height: 40px;
+  height: 50px;
   top: 432px;
   left: 70px;
-  gap: 0px;
   border-radius: 20px;
 }
 
