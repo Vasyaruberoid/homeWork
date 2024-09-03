@@ -7,7 +7,7 @@ const FriendMessage = ({ message }: { message: MessagePropsType }) => {
     <div id={"hw1-friend-message-" + message.id} className={s.friendMessage}>
       <div className={s.friendImageAndText}>
         <div className={s.block}>
-          <img id={"hw1-friend-avatar-" + message.id} src={message.user.avatar} alt="avatar" />
+          <img id={"hw1-friend-avatar-" + message.id} src={message.user.avatar} alt="avatar" width='50' height='50'/>
           <div id={"hw1-friend-time-" + message.id} className={s.friendTime}>
             {message.message.time}
           </div>

@@ -16,7 +16,7 @@ const Message = ({ message }: { message: MessagePropsType }) => {
           </pre>
         </div>
         <div className={s.block}>
-          <img id={"hw1-avatar-" + message.id} src={message.user.avatar} alt='avatar'/>
+          <img id={"hw1-avatar-" + message.id} src={message.user.avatar} alt='avatar' width='50' height='50'/>
           <div id={"hw1-time-" + message.id} className={s.time}>
             {message.message.time}
           </div>
