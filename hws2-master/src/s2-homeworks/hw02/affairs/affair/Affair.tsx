@@ -28,9 +28,11 @@ function Affair(props: AffairPropsType) {
         id={"hw2-button-delete-" + props.affair._id}
         className={buttonClass}
         onClick={deleteCallback}
-      ></button>
+      >X</button>
     </div>
   );
 }
 
 export default Affair;
+
+
