@@ -9,23 +9,20 @@ type GreetingPropsType = {
   onEnter: (e: KeyboardEvent<HTMLInputElement>) => void;
   error: string | null;
   totalUsers: number;
-  lastUserName?: string; // need to fix any
+  lastUserName?: string;
 };
 
-// презентационная компонента (для верстальщика)
-const Greeting: React.FC<GreetingPropsType> = (
-  {
-    name,
-    setNameCallback,
-    addUser,
-    onEnter,
-    onBlur,
-    error,
-    totalUsers,
-    lastUserName,
-  } // деструктуризация пропсов
-) => {
-  const inputClass = s.errorInput; // need to fix with (?:)
+const Greeting: React.FC<GreetingPropsType> = ({
+  name,
+  setNameCallback,
+  addUser,
+  onEnter,
+  onBlur,
+  error,
+  totalUsers,
+  lastUserName,
+}) => {
+  const inputClass = error ?  s.errorInput: s.input; // need to fix with (?:)
 
   return (
     <div id={"hw3-form"} className={s.greetingForm}>
