@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import s from "./Stand.module.css";
 import SuperInputText from "./common/c1-SuperInputText/SuperInputText";
 import SuperCheckbox from "./common/c3-SuperCheckbox/SuperCheckbox";
@@ -6,7 +6,7 @@ import SuperButton from "./common/c2-SuperButton/SuperButton";
 
 const Stand = () => {
   const [stateForAllInputs, setValue] = useState<string>("");
-  const [error, setError] = useState<string>("");
+  const [error, setError] = useState<string | null>("");
 
   const [stateForAllCheckboxes, setChecked] = useState<boolean>(false);
 
