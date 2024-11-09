@@ -32,7 +32,6 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = ({
   className,
   spanClassName,
   id,
-
   ...restProps // все остальные пропсы попадут в объект restProps
 }) => {
   const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
@@ -51,7 +50,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = ({
   const finalSpanClassName = `${s.error}${spanClassName ? spanClassName : ""}`;
   const finalInputClassName = `${s.input}${
     error ? s.errorInput : s.superInput
-  }${className}`; // задача на смешивание классов
+  }${className ? ` ${className}` : ''}`;  
   return (
     <div className={s.inputWrapper}>
       <input
