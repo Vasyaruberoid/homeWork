@@ -7,17 +7,21 @@ type DefaultButtonPropsType = DetailedHTMLProps<
   HTMLButtonElement
 >;
 
+type ButtonType = "red" | "secondary" | "disabled" | "default";
+
 type SuperButtonPropsType = DefaultButtonPropsType & {
-  xType?: string;
+  xType?: ButtonType;
 };
 
 const SuperButton: React.FC<SuperButtonPropsType> = ({
-  xType,
+  xType = 'default',
   className,
   disabled,
   ...restProps // все остальные пропсы попадут в объект restProps, там же будет children
 }) => {
-  const finalClassName = `${s.button}${xType ? s.red : s.default}${className ? ` ${className}` : ''}`;
+  const finalClassName = `${s.button}${xType ? s.red : s.default}${
+    className ? ` ${className}` : ""
+  }`;
   return (
     <button
       disabled={disabled}

@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import s from "./Stand.module.css";
 import SuperInputText from "./common/c1-SuperInputText/SuperInputText";
 import SuperCheckbox from "./common/c3-SuperCheckbox/SuperCheckbox";
@@ -43,19 +43,23 @@ const Stand = () => {
         </div>
         {/*красная кнопка:*/}
         <div>
-          <SuperButton id={"hw4-super-button-red"} xType={'red'}>
+          <SuperButton id={"hw4-super-button-red"} xType={"red"}>
             red
           </SuperButton>
         </div>
         {/*задизэйбленная кнопка:*/}
         <div>
-          <SuperButton id={"hw4-super-button-disabled"} xType={'disabled'} disabled>
+          <SuperButton
+            id={"hw4-super-button-disabled"}
+            xType={"disabled"}
+            disabled
+          >
             disabled
           </SuperButton>
         </div>
         {/*задизэйбленная кнопка:*/}
         <div>
-          <SuperButton id={"hw4-super-button-secondary"} xType={'secondary'}>
+          <SuperButton id={"hw4-super-button-secondary"} xType={"secondary"}>
             secondary
           </SuperButton>
         </div>
