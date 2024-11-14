@@ -19,23 +19,23 @@ export type MessagePropsType = {
 export const message0: MessagePropsType = {
   id: 0,
   user: {
-    avatar: avatar, // можно менять
-    name: "Some Name", // можно менять
+    avatar: avatar,
+    name: "Some Name",
   },
   message: {
     text: "some textsome textsome textsome textsome textsome textsome text", // можно менять
-    time: "22:00", // можно менять
+    time: "22:00",
   },
 };
 export const friendMessage0: MessagePropsType = {
   id: 100,
   user: {
-    avatar: avatar, 
-    name: "Friend Name", 
+    avatar: avatar,
+    name: "Friend Name",
   },
   message: {
-    text: "зеркальное сообщение для тренировки css", 
-    time: "22:00", 
+    text: "зеркальное сообщение для тренировки css",
+    time: "22:00",
   },
 };
 

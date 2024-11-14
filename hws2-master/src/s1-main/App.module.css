@@ -1,16 +1,15 @@
 .App {
   display: flex;
   align-items: center;
+  flex-direction: column;
   margin: 0 auto;
   padding: 0;
   width: 1420px;
   max-width: 100%;
-
 }
 
 .hw {
   display: flex;
-  flex-direction: column;
 }
 
 .block {
@@ -29,4 +28,3 @@
   padding: 0 0 10px 70px;
   margin-top: 50px;
 }
-
