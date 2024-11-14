@@ -1,10 +1,24 @@
 .sidebar {
+    
+  width: 24px;
+  height: 24px;
+  top: 20px;
+  left: 70px;
+  gap: 0px;
+  opacity: 0px;
 }
 
 .sidebar.open {
+    
+  width: 317px;
+  height: 720px;
+  gap: 0px;
+  opacity: 0px;
 }
 
 .background {
+  background: #000000;
+  opacity: 0.3px;
 }
 
 .nav {
@@ -14,12 +28,22 @@
 }
 
 .nav a:hover {
+    
 }
 
 .nav a.active {
+    
+    
 }
 .close {
+  width: 24px;
+  height: 24px;
+  top: 20px;
+  left: 70px;
+  gap: 0px;
+  opacity: 0px;
 }
 
 .close img {
+    
 }

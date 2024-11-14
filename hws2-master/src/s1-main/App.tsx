@@ -1,11 +1,11 @@
 import React from "react";
 import s from "./App.module.css";
-import HW4 from "../../src/s2-homeworks/hw04/HW4";
+import HW5 from "../../src/s2-homeworks/hw05/HW5";
 
 function App() {
   return (
     <div className={s.App}>
-      <HW4 />
+      <HW5 />
     </div>
   );
 }

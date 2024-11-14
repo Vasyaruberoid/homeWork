@@ -19,6 +19,11 @@ const Stand = () => {
             id={"hw4-super-input-like-old"}
             value={stateForAllInputs}
             onChange={(e) => setValue(e.currentTarget.value)}
+            error={error}
+            onEnter={() => {
+              setError(stateForAllInputs.trim() ? "" : "Error");
+              setValue("");
+            }}
           />
         </div>
         {/*инпут с ошибкой:*/}
@@ -47,7 +52,6 @@ const Stand = () => {
             red
           </SuperButton>
         </div>
-        {/*задизэйбленная кнопка:*/}
         <div>
           <SuperButton
             id={"hw4-super-button-disabled"}
@@ -57,16 +61,13 @@ const Stand = () => {
             disabled
           </SuperButton>
         </div>
-        {/*задизэйбленная кнопка:*/}
         <div>
           <SuperButton id={"hw4-super-button-secondary"} xType={"secondary"}>
             secondary
           </SuperButton>
         </div>
       </div>
-
       <div className={s.checkboxes}>
-        {/*чекбокс с текстом:*/}
         <div>
           <SuperCheckbox
             id={"hw4-super-checkbox-with-text"}
