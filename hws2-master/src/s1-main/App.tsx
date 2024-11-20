@@ -1,5 +1,4 @@
 import s from "./App.module.css";
-
 import HW5 from "../../src/s2-homeworks/hw05/HW5";
 
 function App() {

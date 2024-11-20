@@ -16,7 +16,7 @@ function Pages() {
     <div>
       <Routes>
         {/* При переходе на '/', перенаправляем на /pre-junior */}
-        <Route path="/" element={<Navigate to={PATH.PRE_JUNIOR} replace />} />
+        <Route path={"/"} element={<Navigate to={PATH.PRE_JUNIOR} replace />} />
 
         {/* Основные маршруты */}
         <Route path={PATH.PRE_JUNIOR} element={<PreJunior />} />
