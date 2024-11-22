@@ -24,7 +24,7 @@ function Pages() {
         <Route path={PATH.JUNIOR_PLUS} element={<JuniorPlus />} />
 
         {/* Страница ошибки для всех несуществующих маршрутов */}
-        <Route path="*" element={<Error404 />} />
+        <Route path={"/*"} element={<Error404 />} />
       </Routes>
     </div>
   );

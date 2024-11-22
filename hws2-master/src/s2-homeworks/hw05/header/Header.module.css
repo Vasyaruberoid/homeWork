@@ -1,12 +1,13 @@
 .burgerMenuIcon {
   position: relative;
-  top: 15px; /* Расположите иконку сверху */
-  left: 50px; /* Расположите иконку слева */
-  z-index: 1100;/* Убедитесь, что иконка выше других элементов */
-  cursor: pointer; /* Указатель меняется при наведении */
-  width: 30px; /* Размер иконки */
-  height: 30px; 
-}
+  top: 15px;
+  left: 50px;
+
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+} 
 
 .header {
   width: 1280px;
