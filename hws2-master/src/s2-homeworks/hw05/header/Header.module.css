@@ -1,26 +1,28 @@
 .burgerMenuIcon {
-  position: relative;
-  top: 15px;
-  left: 50px;
+  height: 24px;
+  width: 24px;
+
   cursor: pointer;
-  width: 30px;
-  height: 30px;
-  opacity: 1;
-} 
+}
 
 .header {
-  width: 1280px;
   height: 60px;
-  margin-top: 20px;
+  position: sticky;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  padding: 0 70px;
+
+  background: #fff;
+  box-shadow: 0 0 40px rgba(29, 33, 38, 0.13), 0 0 2px rgba(29, 33, 38, 0.1);
 }
 
 .header h1 {
-  font-family: Montserrat;
-  font-size: 24px;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  line-height: 29.26px;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-size: 24px;
+  line-height: 29px;
 }
