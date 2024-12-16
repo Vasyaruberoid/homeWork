@@ -1,9 +1,9 @@
-import HW6 from "../../hw06/HW6";
+import HW7 from "../../hw07/HW7";
 
 function Junior() {
   return (
     <div id={"hw5-page-junior"}>
-      <HW6 />
+      <HW7 />
     </div>
   );
 }
