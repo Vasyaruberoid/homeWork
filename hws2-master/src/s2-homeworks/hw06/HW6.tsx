@@ -5,11 +5,6 @@ import s2 from "../../s1-main/App.module.css";
 import SuperButton from "../hw04/common/c2-SuperButton/SuperButton";
 import s from "./HW6.module.css";
 
-/*
- * 2 - дописать логику функции restore
- * 3 - сделать стили в соответствии с дизайном
- */
-
 const HW6 = () => {
   const [value, setValue] = useState<string>("");
 
@@ -17,7 +12,7 @@ const HW6 = () => {
     saveState<string>("hw6-editable-span-value", value);
   };
   const restore = () => {
-    restoreState("", value);
+   setValue(restoreState<string>("editable-span-value", '')) 
   };
 
   return (
@@ -35,7 +30,6 @@ const HW6 = () => {
             }}
           />
         </div>
-
         <div className={s.buttonsContainer}>
           <SuperButton id={"hw6-save"} onClick={save}>
             Save to ls
