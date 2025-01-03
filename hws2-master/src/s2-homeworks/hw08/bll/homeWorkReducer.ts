@@ -6,13 +6,15 @@ export const homeWorkReducer = (
 ): UserType[] => {
   switch (action.type) {
     case "sort": {
-      return state.sort((a, b) => {
+      const sortedState = [...state]; // Create a shallow copy of the state
+      sortedState.sort((a, b) => {
         if (action.payload === "up") {
           return a.name.localeCompare(b.name);
         } else {
           return b.name.localeCompare(a.name);
         }
       });
+      return sortedState;
     }
     case "check": {
       return state.filter((user) => user.age >= 18);
@@ -22,12 +24,12 @@ export const homeWorkReducer = (
   }
 };
 
-export const sortUsersAC = (payload: number) => {
-  return { type: "check", payload };
+export const sortUsersAC = (payload: "up" | "down") => {
+  return { type: "sort", payload };
 };
 
-export const checkedUsersAC = (payload: "up" | "down") => {
-  return { type: "sort", payload };
+export const checkedUsersAC = (payload:number) => {
+  return { type: "check",payload };
 };
 
 export type SortUsersActionType = ReturnType<typeof sortUsersAC>;
