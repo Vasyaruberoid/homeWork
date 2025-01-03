@@ -28,8 +28,8 @@ export const sortUsersAC = (payload: "up" | "down") => {
   return { type: "sort", payload };
 };
 
-export const checkedUsersAC = (payload:number) => {
-  return { type: "check",payload };
+export const checkedUsersAC = (payload: number) => {
+  return { type: "check", payload };
 };
 
 export type SortUsersActionType = ReturnType<typeof sortUsersAC>;
