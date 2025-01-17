@@ -13,20 +13,22 @@ import SuperRange from "./common/c7-SuperRange/SuperRange";
 function HW11() {
   // for autotests // не менять // можно подсунуть в локалСторэдж нужные числа, чтоб увидеть как они отображаются
   const [value1, setValue1] = useState(restoreState<number>("hw11-value1", 0));
-  const [value2, setValue2] = useState<number[]>(restoreState<number[]>("hw11-value2", [20, 80]));
+  const [value2, setValue2] = useState<number[]>(restoreState<number[]>("hw11-value2", [0, 100]));
 
   const change = (newValue: number | number[], value: number) => {
     // Обработка изменения значения
     if (Array.isArray(newValue)) {
-      // Обновляем оба значения, если приходит массив (для второго слайдера)
-      setValue1(newValue[0]);
+      // Если приходит массив (для второго слайдера), обновляем его
       setValue2(newValue);
     } else {
-      // Обновляем одно значение
+      // Если приходит одиночное значение
       if (value === 1) {
+        // Обновляем одиночный слайдер и устанавливаем его как первое значение диапазона
         setValue1(newValue);
+        setValue2([newValue, value2[1]]); // гарантируем, что первое значение диапазона будет равно value1
       } else if (value === 2) {
-        setValue2([newValue, newValue]); // для второго слайдера обновляем как диапазон
+        // Для второго слайдера обновляем только второе значение диапазона
+        setValue2([value2[0], newValue]);
       }
     }
   };
@@ -67,3 +69,4 @@ function HW11() {
 }
 
 export default HW11;
+    
